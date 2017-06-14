@@ -3,7 +3,7 @@ import glob
 
 
 def read():
-    dirs = glob.glob("/Users/kounojunya/dev/hobby/watching-tweets/tweets/*")
+    dirs = glob.glob("/Users/kounojunya/dev/hobby/jk_analysis/tweets/*")
     for item in dirs:
         for path in glob.glob(item + "/*.txt"):
             for f_text in open(path, "r"):
